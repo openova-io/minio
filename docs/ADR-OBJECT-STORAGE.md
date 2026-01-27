@@ -75,14 +75,12 @@ sequenceDiagram
 
 | Provider | Availability | Cost | Egress |
 |----------|--------------|------|--------|
-| Cloudflare R2 | Always | Low | Free |
-| AWS S3 | If AWS chosen | Medium | Paid |
-| GCP GCS | If GCP chosen | Medium | Paid |
-| Azure Blob | If Azure chosen | Medium | Paid |
-| OCI Object Storage | If OCI chosen | Low | Paid |
-| Huawei OBS | If Huawei chosen | Low | Paid |
+| Cloud Provider Storage | Default for chosen provider | Varies | Varies |
+| Cloudflare R2 | Always available (option) | Low | Free |
 
-**Recommended:** Cloudflare R2 (zero egress fees)
+**Default:** Cloud provider's object storage (Hetzner Object Storage, OCI Object Storage, Huawei OBS, etc.)
+
+**Alternative:** Cloudflare R2 (zero egress fees, useful for multi-cloud scenarios)
 
 ## Configuration
 
